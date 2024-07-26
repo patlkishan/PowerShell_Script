@@ -1,0 +1,149 @@
+/* CSS Variables for easy theming and consistency */
+:root {
+    --primary-color: #0066cc;
+    --secondary-color: #333;
+    --background-color: #f4f4f4;
+    --white: #fff;
+    --light-gray: #f4f4f4;
+    --dark-gray: #333;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --font-family: Arial, sans-serif;
+}
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--dark-gray);
+    background-color: var(--background-color);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header styles */
+header {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* About section styles */
+.about {
+    background: var(--white);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--shadow-color);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.about h1 {
+    color: var(--dark-gray);
+    margin-bottom: 10px;
+}
+
+.about h2 {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.about img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.about p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.about p strong {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.about_btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.about_btn a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about_btn a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media Links */
+.social-media {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-media a {
+    color: var(--dark-gray);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 24px;
+}
+
+.social-media a:hover {
+    color: var(--primary-color);
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about_btn a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .social-media a {
+        font-size: 20px;
+        margin: 0 10px;
+    }
+}
